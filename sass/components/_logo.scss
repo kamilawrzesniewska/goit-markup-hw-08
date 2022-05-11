@@ -1,0 +1,19 @@
+.logo {
+    color: var(--main-black);
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    font-style: bold;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.logodark {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    font-style: bold;
+    line-height: 1.193;
+    letter-spacing: 3%;
+    color: var(--main-color);
+    text-decoration: none;
+}

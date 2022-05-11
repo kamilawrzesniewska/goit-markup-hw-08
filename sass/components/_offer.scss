@@ -1,0 +1,47 @@
+.offer {
+    list-style: none;
+    margin-bottom: 94px;
+}
+
+.sectionoffer {
+    display: flex;
+
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.offer__header {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 3%;
+    color: var(--main-black);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.offer__text {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 90px;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+}
+
+.offer__textwrapper {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
