@@ -1,4 +1,4 @@
-.main-list {
+.portfolio {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     margin-bottom: 94px;
 }
 
-.main-list-item {
+.portfolio__item {
     width: calc((100%/3));
     margin-top: 50px;
     /*border-bottom: 1px solid var(--border-color);
@@ -14,11 +14,15 @@
     border-right: 1px solid var(--border-color); */
     width: 370px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .text-overlay {
+            transform: translateY(0);
+        }
 }
 
 /*img {margin-bottom: 20px;} */
 
-.main-list-item :nth-last-child() {
+.portfolio__item :nth-last-child() {
     margin-right: 30px;
 }
 
@@ -52,23 +56,20 @@
     border-top: 1px solid var(--border-color);
 }
 
-.porfolio-wrapper:hover {
+.porfolio__wrapper:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         1px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-.box-overlay {
+.boxoverlay {
     position: relative;
     overflow: hidden;
 }
 
-.main-list-item:hover .text-overlay {
-    transform: translateY(0);
-}
 
-.text-overlay {
+.boxoverlay__text {
     position: absolute;
     width: 370;
     height: 294;
