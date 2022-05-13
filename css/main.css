@@ -223,14 +223,18 @@ img {
   text-decoration: none;
 }
 
+.hero.container {
+  justify-content: center;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/newimages/backgrounds/bgmobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgmobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 118px;
+    background-position: center;
+    padding: 118px 0;
   }
   .hero__header {
     font-family: var(--secondary-font);
@@ -241,26 +245,27 @@ img {
     letter-spacing: 6%;
     color: var(--white);
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/newimages/backgrounds/bgmobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgmobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/newimages/backgrounds/bgtablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgtablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    padding-top: 118px;
+    padding: 118px 0;
   }
-  .hero .hero__header {
+  .hero__header {
     font-family: var(--secondary-font);
     font-weight: 900;
     font-style: var(--black);
@@ -275,18 +280,18 @@ img {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/newimages/backgrounds/bgtablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgtablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/newimages/backgrounds/bgdesktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgdesktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    padding-top: 118px;
+    padding: 118px 0;
   }
   .hero__header {
     font-family: var(--secondary-font);
@@ -303,8 +308,27 @@ img {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-color: var(--color-backgroudn);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/newimages/backgrounds/bgdesktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/newimages/backgrounds/bgdesktop@2x.jpg");
   }
+}
+
+.hero__btn {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 6%;
+  color: var(--white);
+  background-color: var(--main-color);
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 41px 10px 41px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*.hero {
@@ -355,39 +379,41 @@ img {
 }
 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .sectionadventages {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   .adventages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-    padding-top: 60px;
   }
+  /*.sectionadventages {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+    .adventages{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding-top: 60px;
+    }*/
   .adventages__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-style: bold;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    letter-spacing: 3%;
+    color: var(--main-black);
+    margin-bottom: 10px;
   }
   .adventages__text {
-    margin-left: 15px;
-    max-width: 450px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: #757575;
+    letter-spacing: 3%;
+    color: var(--main-grey);
   }
   .adventages__icon {
     background-color: var(--btn-backround);
@@ -396,16 +422,17 @@ img {
     height: 120px;
     padding: 25px;
   }
-  .adventages__item {
-    width: 100%;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 136px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+  /*.adventages__item{
+        width: 100%;
+        height: 120px;
+    
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 136px;
+        padding-top: 25px;
+        padding-bottom: 25px;    
+    } */
 }
 
 @media screen and (min-width: 768px) {
@@ -419,19 +446,20 @@ img {
     margin-right: 16px;
   }
   .adventages__header {
+    font-style: bold;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    letter-spacing: 3%;
+    color: var(--main-black);
+    margin-bottom: 10px;
   }
   .adventages__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;
+    color: var(--main-grey);
   }
   .adventages__icon {
     background-color: var(--btn-backround);
@@ -460,20 +488,20 @@ img {
     width: 270px;
   }
   .adventages__header {
+    font-style: bold;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    letter-spacing: 3%;
+    color: var(--main-black);
+    margin-bottom: 10px;
   }
   .adventages__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
-    width: 270px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;
+    color: var(--main-grey);
   }
   .adventages__icon {
     background-color: var(--btn-backround);
