@@ -1,4 +1,108 @@
+.section-btn {
+    padding-top: 0;
+}
 
+.porfolio-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-list-item {
+    transition-property: color, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.main-list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.main-list-item {
+
+    &:hover .project__overlay,
+    &:focus .project__overlay {
+        transform: translateY(0);
+    }
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    justify-content: center;
+    padding: 77px 24px;
+    overflow: scroll;
+    font-size: 18px;
+    line-height: 1.556;
+    color: $third-color;
+    background: $color-overlay;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border-text {
+    padding: 20px 24px;
+    border-bottom: 1px solid $color-project-border;
+    border-right: 1px solid $color-project-border;
+    border-left: 1px solid $color-project-border;
+}
+
+.main-list-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.main-list-text {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $color-secondary;
+}
+
+@media screen and (min-width: 768px) {
+    .main-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .main-list-item {
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .main-list-item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .text-overlay {
+        padding: 49px 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-list-item {
+        flex-basis: calc((100% - 90px) / 3);
+    }
+
+    .main-list-item:last-child {
+        margin-bottom: 30px;
+    }
+
+    .text-overlay {
+        padding: 49px 35px;
+        overflow: auto;
+    }
+}
 
 
 
