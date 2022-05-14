@@ -1,6 +1,9 @@
 .sectionteam {
     background-color: var(--btn-backround);
 }
+.team {
+    list-style: none;
+}
 
 .team__item {
     background-color: var(--white);
@@ -33,7 +36,7 @@
     width: 44px;
     height: 44px;
     background-color: var(--main-grey);
-    fill: $color-social-icon;
+    fill: --link-color;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
