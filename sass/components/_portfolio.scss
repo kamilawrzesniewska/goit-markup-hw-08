@@ -2,9 +2,21 @@
     padding-top: 0;
 }
 
+.main-list {
+    list-style: none;
+}
+
 .porfolio-wrapper {
     position: relative;
     overflow: hidden;
+}
+.main-list-header {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+    color: var(--main-black);
 }
 
 .main-list-item {
@@ -24,8 +36,8 @@
 
 .main-list-item {
 
-    &:hover .project__overlay,
-    &:focus .project__overlay {
+    &:hover .text-overlay,
+    &:focus .text-overlay {
         transform: translateY(0);
     }
 }
@@ -42,16 +54,16 @@
     overflow: scroll;
     font-size: 18px;
     line-height: 1.556;
-    color: $third-color;
-    background: $color-overlay;
+    color: #ffffff;
+    background: var(--overlay-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-text {
     padding: 20px 24px;
-    border-bottom: 1px solid $color-project-border;
-    border-right: 1px solid $color-project-border;
-    border-left: 1px solid $color-project-border;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
 }
 
 .main-list-header {
@@ -65,7 +77,7 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: $color-secondary;
+    color: var(--main-grey);
 }
 
 @media screen and (min-width: 768px) {
