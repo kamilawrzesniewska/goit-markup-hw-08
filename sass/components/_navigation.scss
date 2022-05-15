@@ -13,6 +13,9 @@
         &__list {
             margin-right: 101px;
             margin-left: 83px;
+            display: flex;
+            align-items: center;
+            list-style: none;
         }
     }
 
