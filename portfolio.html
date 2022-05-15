@@ -271,59 +271,65 @@
     </section>
     </main>
 
- <footer class="section footer">
-            <div class="container">
-                  <div class="footer__contact-wrapper">
-                        <div class="footer__address-container">
-                              <a class="logo footer__logo" href="index.html"><span class="logo__motive">Web</span>Studio</a>
-                              <address class="address footer__address"><span class="address__span">m. Warszawa, Aleje Jerozolimskie 21</span><br><a class="address__contact" href="mailto:info@example.com">info@example.com</a><br><a class="address__contact" href="tel:48111111111">+48 111 111 111</a></address>
-                        </div>
-                        <div class="footer__socials">
-                              <h3 class="titlefooter footer__third-heading">Dołącz do nas</h3>
-                              <ul class="list">
-                                    <li class="socials">
-                                          <a href="#" class="socials__link socials__link--dark">
-                                                <svg class="socials__icon" width="20" height="20">
-                                                      <use href="images/icons.svg#icon-instagram"></use>
-                                                </svg>
-                                          </a>
-                                    </li>
-                                    <li class="socials">
-                                          <a href="#" class="socials__link socials__link--dark">
-                                                <svg class="socials__icon" width="20" height="20">
-                                                      <use href="images/icons.svg#icon-twitter"></use>
-                                                </svg>
-                                          </a>
-                                    </li>
-                                    <li class="socials">
-                                          <a href="#" class="socials__link socials__link--dark">
-                                                <svg class="socials__icon" width="20" height="20">
-                                                      <use href="images/icons.svg#icon-facebook"></use>
-                                                </svg>
-                                          </a>
-                                    </li>
-                                    <li class="socials">
-                                          <a href="#" class="socials__link socials__link--dark">
-                                                <svg class="socials__icon" width="20" height="20">
-                                                      <use href="images/icons.svg#icon-linkedin"></use>
-                                                </svg>
-                                          </a>
-                                    </li>
-                              </ul>
-                        </div>
-                  </div>
-                  <div class="footer__form-container">
-                        <h3 class="titlefooter footer__third-heading">Zapisz się do newslettera</h3>
-                        <form action="#" class="footer__form">
-                              <input type="email" name="user-email" placeholder="E-mail" class="footer__input">
-                              <button type="submit" class="button footer__button">Zapisz się <svg
-                                          class="footer__icon">
-                                          <use href="images/icons.svg#icon-send"></use>
-                                    </svg></button>
-                        </form>
-                  </div>
-            </div>
-      </footer>
+ <footer class="sectionfooter">
+    <div class="container" >
+        <ul class="footer">
+    <li class="contact"><div class="contact__wrapper"> 
+    <a class="link" href="index.html"> <span class="logodark">Web</span>Studio </a>
+     <address class="address">
+        m. Warszawa, Aleje Jerozolimskie 21 <br>
+     <a class="address-mail" href="mailto:info@example.com">info@example.com</a> <br>
+     <a class="address-phone" href="tel:48111111111">+48 111 111 111 </a> <br>
+    </address>
+    </div></li>
+    <li class="righfooter"><div class="righfooter__wrapper">
+        <p class="righfooter__header">DOŁĄCZ DO NAS</p>
+        <ul class="socialmedia">
+            <li class="socialmedia__item">
+                <a class="socialmedia__link">
+                    <svg class="socialmedia__icon" width="20" height="20" >
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a> 
+            </li>
+            <li class="socialmedia__item">
+                <a class="socialmedia__link">
+                    <svg class="socialmedia__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socialmedia__item">
+                <a class="socialmedia__link">
+                    <svg class="socialmedia__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socialmedia__item">
+                <a class="socialmedia__link">
+                    <svg class="socialmedia__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div></li>
+
+    <!--newsletter-->
+    <div class="newsletter">
+        <p class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</p>
+        <form class="newsletter__form" name="newsletter-form" autocomplete="on" formvalidate>
+            <label><input class="newsletter__input" type="email" name="email" placeholder="E-mail" /></label>
+            <button class="newsletter__btn" type="submit">
+                <svg class="newsletter__icon" width="139" height="32">
+                    <use href="./images/icons.svg#icon-newsletterbtn"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+    </div>
+</footer> 
 <div class="mobilemenu is-hidden" data-menu>
     
             <svg class="close-btn mobilemenu__close-btn" data-menu-close>
